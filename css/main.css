@@ -1,0 +1,90 @@
+/* CSS Portfolio Sara Claeys */
+
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+body {
+    font: 300 100%/1.6 Raleway, Arial, sans-serif;
+    background: #F1F1F1F1;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/*-------------------- main header ------------------*/
+.mainheader {
+    background: black url(../images/banner.jpg) left/cover no-repeat;
+}
+
+.mainheader .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F1F1F1F1;
+    height: 100vh;
+}
+
+h1 {
+    font: 300 2.5rem/1.6 Raleway, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding: .5em 1em .8em;
+    line-height: normal;
+}
+
+.overlay p {
+    font: 200 1rem/1.6 Raleway, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .6em;
+    padding: 1em;
+}
+
+/*-------------------- arrow down------------------*/
+#arrow-down {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 150px;
+}
+
+#arrow-down::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: 3s arrow infinite ease;
+}
+
+@-webkit-keyframes arrow {
+
+    0%,
+    100% {
+        top: 50px;
+    }
+
+    50% {
+        top: 80px;
+    }
+}
+
+@keyframes arrow {
+
+    0%,
+    100% {
+        top: 50px;
+    }
+
+    50% {
+        top: 80px;
+    }
+}
