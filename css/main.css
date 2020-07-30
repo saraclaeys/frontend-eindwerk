@@ -3,19 +3,93 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body {
     font: 300 100%/1.6 Raleway, Arial, sans-serif;
-    background: #030303;
+    background: #F1F1F1F1;
     text-align: center;
     overflow-x: hidden;
 }
 
-/*-------------------- main header ------------------*/
-/* .mainheader {
-    background: black url(../images/banner.jpg) left/cover no-repeat fixed;
-} */
+h2 {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 2rem;
+    padding-top: 25px;
+}
 
+h3 {
+    font-family: Roboto, Arial, sans-serif;
+    padding: 20px;
+}
+
+hr {
+    width: 80%;
+}
+
+p {
+    font-family: Roboto, Arial, sans-serif;
+    padding: 20px;
+}
+
+
+/*-------------------- main navigation------------------*/
+a[href="#menu"] {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: block;
+    color: #F1F1F1F1;
+    width: 60px;
+    height: 60px;
+    font: 300 1.5rem/60px Raleway, Arial, sans-serif;
+    text-align: center;
+    transition: all 500ms;
+}
+
+a[href="#menu"]:hover {
+    background: #1e1e1e;
+}
+
+.mainnav {
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    right: 0;
+}
+
+.links {
+    position: absolute;
+    top: 0;
+    right: -250;
+    background: rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 100vh;
+    padding: 100px 10px 1em;
+    transition: right 500ms ease-in-out;
+}
+
+.links a {
+    display: block;
+    background: #030303;
+    padding: 1em;
+    margin-bottom: .5em;
+    color: #F1F1F1F1;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+
+.links a:hover {
+    background: #1e1e1e;
+}
+
+.open {
+    right: 0;
+}
+
+/*-------------------- main header ------------------*/
 .mainheader .overlay {
     background: rgba(0, 0, 0, 0.7);
     display: flex;
@@ -96,57 +170,27 @@ h1 {
     }
 }
 
-/*-------------------- main navigation------------------*/
-/* .nav-container {
-    background: #030303;
-    border: 1px solid red;
-} */
-
-a[href="#menu"] {
-    position: relative;
-    float: right;
-    width: 60px;
-    top: 15px;
-    right: 15px;
-    z-index: 1000;
-    /* display: inline-block; */
-    color: #F1F1F1F1;
-    font: 100 1.5rem/60px Raleway, Arial, sans-serif;
-    transition: all 500ms;
-}
-
-a[href="#menu"]:hover {
+/*-------------- button cv --------------*/
+button.cv {
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-size: .8rem;
+    width: 150px;
+    height: 35px;
     background: #1e1e1e;
-}
-
-.mainnav {
-    position: fixed;
-    z-index: 900;
-    top: 500;
-    right: 500;
-}
-
-.links {
-    background: #030303;
-    padding: 5em 10px 1em;
-    transition: right 500ms ease-in-out;
-    display: inline-block;
-}
-
-.links a {
-    display: block;
-    background: #030303;
-    padding: 1em;
-    margin-bottom: .5em;
     color: #F1F1F1F1;
-    text-decoration: none;
-    transition: all 500ms;
+    cursor: pointer;
+    margin-bottom: 25px;
 }
 
-.links a:hover {
-    border-bottom: 1px solid #1e1e1e;
+button.cv:hover {
+    background: #1e1e1e;
+    color: #F1F1F1F1;
+    border: none;
 }
 
-.open {
-    left: 0;
+/*-------------- profielfoto --------------*/
+.profielfoto {
+    border-radius: 25%;
+    text-align: center;
 }
