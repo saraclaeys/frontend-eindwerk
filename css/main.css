@@ -6,15 +6,15 @@
 
 body {
     font: 300 100%/1.6 Raleway, Arial, sans-serif;
-    background: #F1F1F1F1;
+    background: #030303;
     text-align: center;
     overflow-x: hidden;
 }
 
 /*-------------------- main header ------------------*/
-.mainheader {
+/* .mainheader {
     background: black url(../images/banner.jpg) left/cover no-repeat fixed;
-}
+} */
 
 .mainheader .overlay {
     background: rgba(0, 0, 0, 0.7);
@@ -97,23 +97,26 @@ h1 {
 }
 
 /*-------------------- main navigation------------------*/
-.nav-container {
+/* .nav-container {
     background: #030303;
-}
+    border: 1px solid red;
+} */
 
 a[href="#menu"] {
+    position: relative;
+    float: right;
     width: 60px;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     z-index: 1000;
-    display: inline-block;
+    /* display: inline-block; */
     color: #F1F1F1F1;
     font: 100 1.5rem/60px Raleway, Arial, sans-serif;
     transition: all 500ms;
 }
 
 a[href="#menu"]:hover {
-    background: #222A10;
+    background: #1e1e1e;
 }
 
 .mainnav {
@@ -124,9 +127,10 @@ a[href="#menu"]:hover {
 }
 
 .links {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 1em 10px;
+    background: #030303;
+    padding: 5em 10px 1em;
     transition: right 500ms ease-in-out;
+    display: inline-block;
 }
 
 .links a {
@@ -140,9 +144,9 @@ a[href="#menu"]:hover {
 }
 
 .links a:hover {
-    background: #222A10;
+    border-bottom: 1px solid #1e1e1e;
 }
 
 .open {
-    right: 0;
+    left: 0;
 }

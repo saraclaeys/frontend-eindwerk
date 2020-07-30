@@ -2,13 +2,19 @@
 
 $(document).ready(function () {
 
+    // Parallax
+
+    $('.parallax-window').parallax({
+
+    });
+
     // Menu
     $(".menu").click(function () {
-        $(".links").toggleClass("open");
+        $(".links").toggleClass('open');
     });
 
     $(window).scroll(function () {
-        $(".links").removeClass("open");
+        $(".links").removeClass('open');
         event.preventDefault();
     });
 
