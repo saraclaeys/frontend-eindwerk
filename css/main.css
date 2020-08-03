@@ -267,7 +267,8 @@ span.ability-score {
 }
 
 /*-------------- languages --------------*/
-.lang {
+.lang,
+.tool {
   text-align: left;
   line-height: 2rem;
 }
