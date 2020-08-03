@@ -6,30 +6,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 body {
-  font: 300 100%/1.6 Raleway, Arial, sans-serif;
+  font: 300 100%/1.6 Roboto, Arial, sans-serif;
   background: #f1f1f1f1;
   text-align: center;
   overflow-x: hidden;
 }
 
 h2 {
-  font-family: Roboto, Arial, sans-serif;
   font-size: 2rem;
   padding-top: 25px;
+  padding-bottom: 15px;
 }
 
 h3 {
-  font-family: Roboto, Arial, sans-serif;
-  padding: 20px;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 35px;
+  color: #3b5c66;
+
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 10px;
 }
 
 hr {
   width: 80%;
-}
-
-p {
-  font-family: Roboto, Arial, sans-serif;
-  padding: 20px;
+  color: #3b5c66;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /*-------------------- main navigation------------------*/
@@ -168,6 +175,12 @@ h1 {
   }
 }
 
+/*-------------- about --------------*/
+.about p {
+  font-family: Roboto, Arial, sans-serif;
+  padding: 0 30px;
+}
+
 /*-------------- button cv --------------*/
 button.cv {
   text-transform: uppercase;
@@ -179,6 +192,7 @@ button.cv {
   color: #f1f1f1f1;
   cursor: pointer;
   margin-bottom: 25px;
+  margin-top: 15px;
 }
 
 button.cv:hover {
@@ -193,4 +207,29 @@ button.cv:hover {
   padding-top: 10px;
   display: flex;
   justify-content: center;
+}
+
+/*-------------- experiences --------------*/
+.experience-row {
+  text-align: left;
+  margin-left: 35px;
+}
+
+.experience-row span {
+  float: right;
+  padding-right: 35px;
+}
+
+.experience-location {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: #3b5c66;
+}
+
+.experience-place {
+  padding-top: 15px;
+}
+
+i .fa .fa-map-marker {
+  color: #3b5c66;
 }
