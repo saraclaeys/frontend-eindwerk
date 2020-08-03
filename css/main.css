@@ -34,7 +34,7 @@ h4 {
 
 hr {
   width: 80%;
-  color: #3b5c66;
+  color: #3b5c6633;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -271,4 +271,11 @@ span.ability-score {
 .tool {
   text-align: left;
   line-height: 2rem;
+}
+
+/*-------------------- projects------------------*/
+.projects img {
+  width: 100%;
+  padding-bottom: 25px;
+  padding-right: 35px;
 }
