@@ -47,6 +47,7 @@ a[href="#menu"] {
   z-index: 1000;
   display: block;
   color: #f1f1f1f1;
+  background: #1e1e1e;
   width: 60px;
   height: 60px;
   font: 300 1.5rem/60px Raleway, Arial, sans-serif;
@@ -278,4 +279,35 @@ span.ability-score {
   width: 100%;
   padding-bottom: 25px;
   padding-right: 35px;
+}
+
+/*-------------------- footer contact------------------*/
+.contact {
+  color: #f1f1f1;
+  background: #1e1e1e;
+  height: 250px;
+}
+
+.social-icons .fa-linkedin-in {
+  color: #f1f1f1;
+}
+
+.social-icons li {
+  display: inline;
+  font-size: 2rem;
+  padding: 0 .7em .7em;
+}
+
+.social-icons a {
+  color: #999;
+  text-decoration: none;
+  transition: all 500ms;
+}
+
+.social-icons a:hover {
+  color: whitesmoke;
+}
+
+ul.social-icons {
+  padding: 0;
 }
