@@ -15,7 +15,7 @@ body {
 h2 {
   font-size: 2rem;
   padding-top: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 h3 {
@@ -226,10 +226,44 @@ button.cv:hover {
   color: #3b5c66;
 }
 
-.experience-place {
+.experience-doc {
   padding-top: 15px;
 }
 
 i .fa .fa-map-marker {
   color: #3b5c66;
 }
+
+/*-------------- abilities --------------*/
+.abilities {
+  line-height: 2rem;
+}
+
+.hard-skills,
+.soft-skills {
+  text-align: left;
+}
+
+.no-bullets {
+  list-style: none;
+}
+
+span.ability-title {
+  display: inline-block;
+  width: 50%;
+}
+
+span.ability-score {
+  float: right;
+  padding-right: 35px;
+}
+
+.fa-star {
+  color: #d2d2d2;
+}
+
+.checked {
+  color: #3b5c66;
+}
+
+/*-------------- languages --------------*/
