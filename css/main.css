@@ -346,3 +346,61 @@ span.ability-score {
 ul.social-icons {
   padding: 0;
 }
+
+/*---------------- breakpoints --------------*/
+
+@media screen and (min-width: 1250px) {
+  h1 {
+    font-size: 3rem;
+    padding-top: 0;
+  }
+
+  p,
+  li {
+    font-size: 1.1rem;
+  }
+
+  .flex-container {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px 100px 100px;
+  }
+
+  .about h2 {
+    padding: 50px 0;
+  }
+
+  .about-text {
+    padding-right: 75px;
+  }
+
+  .about button.cv {
+    margin-top: 25px;
+  }
+
+  section.experiences,
+  section.abilities,
+  section.languages,
+  section.tools {
+    margin: 0 auto;
+    width: 60vw;
+  }
+
+  .projects .no-bullets {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    grid-gap: 2em;
+  }
+}
+
+/*----------- breakpoints voor iphone ----------*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .mainheader {
+    background-size: none;
+    background-attachment: scroll;
+  }
+}
