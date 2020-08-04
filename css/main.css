@@ -23,7 +23,6 @@ h3 {
   text-align: left;
   margin-left: 35px;
   color: #3b5c66;
-
 }
 
 h4 {
@@ -285,7 +284,26 @@ span.ability-score {
 .contact {
   color: #f1f1f1;
   background: #1e1e1e;
-  height: 250px;
+  height: 675px;
+  padding: 25px;
+}
+
+.contact h2 {
+  padding-top: 75px;
+}
+
+.contact p {
+  font: 300 1.2rem/60px Raleway, Arial, sans-serif;
+  padding-top: 55px;
+  line-height: 2.5rem;
+}
+
+.social-icons hr {
+  background: #2d2d2d;
+}
+
+.social-icons {
+  margin-top: 125px;
 }
 
 .social-icons .fa-linkedin-in {
@@ -294,8 +312,8 @@ span.ability-score {
 
 .social-icons li {
   display: inline;
-  font-size: 2rem;
-  padding: 0 .7em .7em;
+  font-size: 1.5rem;
+  padding: 0 1em 1em;
 }
 
 .social-icons a {
@@ -305,7 +323,7 @@ span.ability-score {
 }
 
 .social-icons a:hover {
-  color: whitesmoke;
+  color: #3b5c66;
 }
 
 ul.social-icons {
