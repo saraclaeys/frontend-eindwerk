@@ -280,16 +280,33 @@ span.ability-score {
   padding-right: 35px;
 }
 
+.projects button {
+  font-family: Raleway;
+  font-size: 0.8rem;
+  width: 250px;
+  height: 35px;
+  background: #1e1e1e;
+  color: #f1f1f1f1;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.projects button:hover {
+  background: #1e1e1e;
+  color: #f1f1f1f1;
+  border: none;
+}
+
 /*-------------------- footer contact------------------*/
 .contact {
   color: #f1f1f1;
   background: #1e1e1e;
   height: 675px;
-  padding: 25px;
+  padding: 35px;
 }
 
 .contact h2 {
-  padding-top: 75px;
+  padding-top: 25px;
 }
 
 .contact p {
